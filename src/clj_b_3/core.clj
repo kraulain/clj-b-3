@@ -8,3 +8,10 @@
 
 ;;vectors a heterogenous
 [ 1 :a "word" \c]
+
+;; using vec function
+(vec '(1 2 3 4))
+
+(vec (list 1 2 3 4))
+
+(vec {:a 1, :b 2})
