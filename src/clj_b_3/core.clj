@@ -1,6 +1,4 @@
 (ns clj-b-3.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+;; vectors evaluation
+[ 1 2 3 (* 2 2)]
