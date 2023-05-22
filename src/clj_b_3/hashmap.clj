@@ -31,4 +31,55 @@
 
 (select-keys squares [:1 :8])
 
+;; Access patterns
 
+;;; Order is forgeten
+
+(= {:a 1 :b 2} {:b 2 :a 1})
+
+;;; duplicates are forgotten or replaced
+
+
+(conj {:a 1} {:a 1})
+(conj {:a 1} {:a 2})
+
+;;; Accessed by key
+
+(get squares :8)
+(get {} :a)
+
+;;; Associate key value pairs
+
+(assoc {:a 0} :b 2 "greeting" "Hello")
+
+;;; remove value by key
+
+(dissoc squares :8)
+(dissoc squares :8 :0 :1)
+
+;;; count
+
+(count squares)
+
+;;; equality
+
+(= (hash-map :a 0 :b 1) (array-map :a 0 :b 1))
+
+;;; Containment
+
+(contains? squares :1)
+
+;;; representing enities
+
+{:id 123
+ :name "John doe"
+ :email "jd@email.com"}
+
+;;; function
+
+(:a {:a 1 :b 2})
+
+({1 :monday, 2 :tuesday} 2)
+
+
+(map {1 :monday, 2 :tuesday} '(2 2 2 1 1 1))
