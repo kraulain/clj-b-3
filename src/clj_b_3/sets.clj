@@ -8,3 +8,13 @@
 
 (into #{} [:a 1 "hello"])
 
+;; containment
+
+(contains? #{:a :b :c} :c)
+
+(#{:a :b :c} :b)
+
+(get #{:a :n :l} :a)
+
+(first #{:a :b :d})
+
