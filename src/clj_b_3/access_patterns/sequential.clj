@@ -22,3 +22,35 @@
 (conj toys :stuffy) ;; new item gets added at back
 
 (into toys [:monkey :cookware :bike])
+
+
+;;; Queue
+
+(def q clojure.lang.PersistentQueue/EMPTY)
+
+(seq (conj q :1 :2 :3))
+
+;;; sorted maps
+
+;;; sorted sets
+
+
+;;; Simple todo example
+
+;; (def todos (atom []))
+;; (def todos (atom ()))
+(def todos (atom clojure.lang.PersistentQueue/EMPTY))
+
+(defn add-todo!
+  "Adds a todo to the collection of todos"
+  [todo]
+  (swap! todos conj todo))
+
+(do
+  (add-todo! "buy eggs")
+  (add-todo! "fry eggs")
+  (add-todo! "eat eggs"))
+
+(seq @todos)
+
+
