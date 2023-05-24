@@ -10,4 +10,15 @@
 
 (conj utensils :spatula) ;; new items gets added to front
 
+(into utensils [:plate :glass :cup]) ;; seemingly in reverse because each gets added to front
 
+
+;;; Vectors 
+
+(def toys [:car :chair :truck])
+
+(seq toys) ;; order is maintained
+
+(conj toys :stuffy) ;; new item gets added at back
+
+(into toys [:monkey :cookware :bike])
