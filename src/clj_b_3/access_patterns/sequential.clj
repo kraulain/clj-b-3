@@ -53,4 +53,6 @@
 
 (seq @todos)
 
+(conj nil :a)
 
+(assoc nil :a \a)
