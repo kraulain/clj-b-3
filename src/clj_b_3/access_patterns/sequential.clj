@@ -59,3 +59,5 @@
 
 
 ;; Select vs Filter
+
+;; Vec vs Vector
