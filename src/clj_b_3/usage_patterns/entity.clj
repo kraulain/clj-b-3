@@ -4,4 +4,6 @@
 
 ;; entity usage pattern
 
-;; Tuple usage pattern 
+;; Tuple usage pattern
+
+;; Multi comparison ussage pattern
