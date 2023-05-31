@@ -3,3 +3,5 @@
 ;; index usage pattern
 
 ;; entity usage pattern
+
+;; Tuple usage pattern 
