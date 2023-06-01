@@ -8,3 +8,10 @@
 
 
 (:name user)
+
+(get user :height)
+
+(assoc user :name "Jane Doe")
+
+
+user
