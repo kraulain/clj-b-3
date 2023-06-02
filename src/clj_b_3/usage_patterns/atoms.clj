@@ -7,7 +7,15 @@
   [item]
   (swap! q conj item))
 
+(defn dequeue!
+  "remove item forom queu and return the iteme"
+  []
+  (let [val (peek @q)]
+    (swap! q pop)
+    val))
+
 (comment
-  (enqueue! :a)
+  (enqueue! :e)
   (seq @q)
+  (dequeue!)
   )
