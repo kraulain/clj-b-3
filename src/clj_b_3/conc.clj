@@ -1,11 +1,11 @@
 (ns clj-b-3.conc)
 
-(def board (promise))
+(def book-count (future (do
+                          (Thread/sleep 5000)
+                          42)))
 
-(doto (Thread. (fn []
-                 (Thread/sleep 5000)
-                 (deliver board 400))))
+(println "doing something")
 
+(println "done")
 
-(println @board)
-
+(println "there are" @book-count " books")
