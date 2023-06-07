@@ -13,5 +13,11 @@
 
 (def sum (ref 0))
 
-(def count (ref 0))
+(def items (ref 0))
+
+(defn add-to-average [num]
+  (dosync
+   (alter sum + num)
+   (alter items + 1))
+  :done)
 
