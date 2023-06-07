@@ -21,3 +21,6 @@
    (alter items + 1))
   :done)
 
+(defn current-average []
+  (dosync
+   (/ @sum @items)))
