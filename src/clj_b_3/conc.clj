@@ -8,4 +8,7 @@
 
 (println "done")
 
-(println "there are" @book-count " books")
+(println "there are" @book-count "≈‚books")
+
+
+(def sum (ref 0))
