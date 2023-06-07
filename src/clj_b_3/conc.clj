@@ -12,3 +12,6 @@
 
 
 (def sum (ref 0))
+
+(def count (ref 0))
+
